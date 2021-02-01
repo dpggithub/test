@@ -18,7 +18,7 @@ public class TimeTest {
         System.out.println(NumberFormat.getCurrencyInstance(Locale.US).format(n));
         System.out.println(NumberFormat.getCurrencyInstance(Locale.CHINA).format(n));
 
-        Date date=new Date(System.currentTimeMillis());
+        Date date=new Date(1611746766925L);
         System.out.println(System.currentTimeMillis());
         System.out.println(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date.getTime()));
 

@@ -24,7 +24,7 @@
         <dependency>
             <groupId>com.lyentech.bdc</groupId>
             <artifactId>atom</artifactId>
-            <version>1.0.2</version>
+            <version>1.0.6</version>
         </dependency>
         <dependency>
             <groupId>org.bouncycastle</groupId>
