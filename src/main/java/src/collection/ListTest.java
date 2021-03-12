@@ -50,7 +50,7 @@ public class ListTest {
         }
     }
 
-    // 查找指定list确实的元素
+    // 查找指定list缺失的元素
     private static int findMissingNumber(int start, int end, List<Integer> list){
 //        List<Integer> lists = new ArrayList<>();
 //        for (int i = start; i <= end; i++) {

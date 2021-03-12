@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 
 /**
- * 动态代理
+ * 动态代理(JDK:基于接口；cglib:基于实现类)
  */
 public class proxy {
 

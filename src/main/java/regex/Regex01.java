@@ -1,7 +1,9 @@
+package regex;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class regex {
+public class Regex01 {
     public static void main(String[] args) {
         String str = "dhjs#,.*&$@!~";
         specialCharRegex(str);

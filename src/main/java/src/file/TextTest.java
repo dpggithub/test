@@ -6,12 +6,12 @@ import java.nio.charset.StandardCharsets;
 public class TextTest {
 
     public static void main(String[] args) throws IOException {
-        System.out.println(writeToFile("dhuqhdueu","C:\\Users\\260477\\Desktop\\file.txt",true));
-        System.out.println(writeToFile("C:\\Users\\260477\\Desktop\\file.txt","C:\\Users\\260477\\Desktop\\file1.txt"));
-        System.out.println(readFromFile("C:\\Users\\260477\\Desktop\\file.txt"));
-        for(int i=7;i<10;i++) {
-            System.out.println(createFile("C:\\Users\\260477\\Desktop\\file.txt"+i));
-        }
+       // System.out.println(writeToFile("dhuqhdueu","C:\\Users\\260477\\Desktop\\file.txt",true));
+        System.out.println(writeToFile("C:\\Users\\260477\\Desktop\\input.txt","C:\\Users\\260477\\Desktop\\output.txt"));
+       // System.out.println(readFromFile("C:\\Users\\260477\\Desktop\\file.txt"));
+       // for(int i=7;i<10;i++) {
+        //    System.out.println(createFile("C:\\Users\\260477\\Desktop\\file.txt"+i));
+        //}
     }
 
     /**
@@ -80,8 +80,6 @@ public class TextTest {
                 BufferedWriter bufferedWriter = new BufferedWriter(outputStreamWriter);
                 bufferedWriter.write(s);
                 bufferedWriter.flush();
-                fileInputStream.close();
-                inputStreamReader.close();
                 return true;
             }
         }

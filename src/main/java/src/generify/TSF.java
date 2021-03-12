@@ -1,4 +1,4 @@
-package src.t;
+package src.generify;
 
 import java.util.Arrays;
 

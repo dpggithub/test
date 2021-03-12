@@ -1,4 +1,4 @@
-package src.t;
+package src.generify;
 
 public enum ResultCode {
     SUCCESS(200,"成功"),

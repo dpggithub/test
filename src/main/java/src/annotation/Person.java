@@ -3,7 +3,6 @@ package src.annotation;
 import java.lang.reflect.Field;
 
 public class Person {
-    @max
     @max(name = "身高")
     public int height;
     @min(name = "体重")
