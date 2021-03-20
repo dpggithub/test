@@ -1,4 +1,4 @@
-package Reflection;
+package reflection;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -8,7 +8,7 @@ public class Test2 {
         Person person=new Person("李四",25);
         Class<Person> cls0 = (Class<Person>) Person.class;
         Class<Person> cls = (Class<Person>) person.getClass();
-        Class<Person> cls1 = (Class<Person>) Class.forName("Reflection.Test2$Person");
+        Class<Person> cls1 = (Class<Person>) Class.forName("reflection.Test2$Person");
         System.out.println(cls0.toString());
         System.out.println(cls.toString());
         System.out.println(cls1.toString());

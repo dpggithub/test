@@ -1,4 +1,4 @@
-package thread;
+package designPattern;
 
 /**
  * 饿汉式单例
@@ -10,7 +10,7 @@ public class HungrySingleton {
 
     public static HungrySingleton getInstance(){
             return INSTANCE;
-    }
+    } 
 
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {

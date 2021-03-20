@@ -1,4 +1,4 @@
-package thread;
+package designPattern;
 
 /**
  * 懒汉式单例

@@ -1,16 +1,12 @@
-package servlet;
+package kafka;
 
-
-
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-//@MapperScan("redis.dao")
-public class ServletApplication {
+public class KafkaApplication {
     public static void main(String[] args) {
-        SpringApplication.run(ServletApplication.class,args);
+            SpringApplication.run(KafkaApplication.class,args);
     }
 }
