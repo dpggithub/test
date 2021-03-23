@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 @Data
 @TableName("push_message")
-public class PushMessage implements Serializable {
+public class PushMessage extends BaseTimeEntity implements Serializable {
     /**
      * 主键id
      */
@@ -18,15 +18,4 @@ public class PushMessage implements Serializable {
      */
     private String msg;
 
-    /**
-     * 创建时间
-     */
-    @TableField(value = "create_time",fill = FieldFill.INSERT)
-    private long createTime;
-
-    /**
-     * 更新时间
-     */
-    @TableField(value = "update_time",fill = FieldFill.UPDATE)
-    private long updateTime;
 }

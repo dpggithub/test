@@ -13,6 +13,6 @@
     </settings>
 
     <typeAliases>
-        <package name="redis.model"/>
+        <package name="kafka.model"/>
     </typeAliases>
 </configuration>
