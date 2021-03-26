@@ -6,7 +6,12 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 
 public interface ConsumeMessageService extends IService<PushMessage> {
     /**
-     * 消费消息
+     * 消费消息1
      */
     void consumeMessage(ConsumerRecord<?, String> record);
+
+    /**
+     * 消费消息二
+     */
+//    void consumeMessageAgain(ConsumerRecord<?, String> record);
 }
