@@ -13,5 +13,5 @@ public interface ConsumeMessageService extends IService<PushMessage> {
     /**
      * 消费消息二
      */
-//    void consumeMessageAgain(ConsumerRecord<?, String> record);
+    void consumeMessageAgain(ConsumerRecord<?, String> record);
 }

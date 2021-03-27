@@ -13,6 +13,12 @@ public class ProduceMessageController {
     @Autowired
     private ProduceMessageService produceMessageService;
 
+    @PostMapping("/create")
+    public ResultEntity createTopic() throws InterruptedException {
+        produceMessageService.createTopic();
+        return ResultEntity.success();
+    }
+
     @PostMapping("/pm")
     public ResultEntity produceMessage(){
         produceMessageService.produceMessage();

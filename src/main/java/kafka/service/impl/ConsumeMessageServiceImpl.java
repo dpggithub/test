@@ -26,15 +26,15 @@ public class ConsumeMessageServiceImpl extends ServiceImpl<PushMessageMapper,Pus
         System.out.println((String.format("消费消息%s: ",msg)));
     }
 
-//    @Override
-//    @KafkaListener(topics = "kafka_produce_message_T1",groupId = "kafka-consumer-group1")
-//    public void consumeMessageAgain(ConsumerRecord<?, String> record) {
-//        String msg =record.value();
-//        PushMessage pushMessage =new PushMessage();
-//        pushMessage.setMsg(msg+"xx");
-//        save(pushMessage);
-//        System.out.println((String.format("消费消息%s",msg)));
-//    }
+    @Override
+    @KafkaListener(topics = "kafka_produce_message_T1",groupId = "kafka-consumer-group")
+    public void consumeMessageAgain(ConsumerRecord<?, String> record) {
+        String msg =record.value();
+        PushMessage pushMessage =new PushMessage();
+        pushMessage.setMsg(msg+"xx");
+        save(pushMessage);
+        System.out.println((String.format("消费消息%s",msg)));
+    }
 
 
 }
