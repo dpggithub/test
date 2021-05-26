@@ -11,6 +11,7 @@ public class Thread05 {
     }
 
     static class Counter {
+        private boolean flag;
         private final Lock lock = new ReentrantLock();
         private int count;
 
@@ -19,6 +20,7 @@ public class Thread05 {
             if (lock.tryLock(1, TimeUnit.SECONDS)) {
                 try {
                     count += n;
+                    System.out.println(flag);
                 } finally {
                     lock.unlock();
                 }

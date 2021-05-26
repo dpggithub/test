@@ -1,11 +1,8 @@
 package kafka;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.kafka.clients.producer.Callback;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerRecord;
-import org.apache.kafka.clients.producer.RecordMetadata;
-
 import java.util.concurrent.TimeUnit;
 
 @Slf4j
@@ -15,6 +12,7 @@ public class KafkaSender {
             ProducerRecord<String,String> record = new ProducerRecord<>(topic, msg);
             // 从实例池获取连接,没有空闲连接则阻塞等待
             KafkaProducer<String, String> kafkaProducer = KafkaProducerQueue.queue.take();
+
             // 这里可以添加回调
             kafkaProducer.send(record, (recordMetadata, e) -> {
                 if(e ==null){

@@ -4,7 +4,7 @@ package designPattern;
  * 创建者模式
  */
 public class UrlBuilder {
-    private StringBuilder stringBuilder= new StringBuilder();
+    private final StringBuilder stringBuilder= new StringBuilder();
 
     public UrlBuilder() {
     }
