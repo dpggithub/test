@@ -14,7 +14,7 @@ public class WriteReadLock {
 
         Point point=new Point();
         point.move(3,4);
-        point.move(3,5);
+        //point.move(3,5);
         System.out.println(point.distanceFromOrigin());
 
     }
