@@ -20,12 +20,13 @@ public class GoodSuspend {
             while(true){
 
                 synchronized (this){
-                    while(suspendme)
+                    while(suspendme) {
                         try{
                             wait();
                         }catch (InterruptedException e){
                             e.printStackTrace();
                         }
+                    }
                 }
 
                 synchronized (u){
