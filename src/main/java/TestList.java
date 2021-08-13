@@ -9,5 +9,5 @@ public class TestList {
         String url0 =urlList.get(0);
         System.out.println(Arrays.toString(urlList.toArray()));
         System.out.println(url0);
-        }
     }
+}
